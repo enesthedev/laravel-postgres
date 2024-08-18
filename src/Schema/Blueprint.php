@@ -2,8 +2,6 @@
 
 namespace Enes\LaravelPostgres\Schema;
 
-use Illuminate\Support\Fluent;
-
 class Blueprint extends \Illuminate\Database\Schema\Blueprint
 {
     public string $inherits;
@@ -103,7 +101,7 @@ class Blueprint extends \Illuminate\Database\Schema\Blueprint
         return $this->addColumn('tsvector', $column);
     }
 
-    protected function addFluentIndexes(\Illuminate\Database\Connection $connection, \Illuminate\Database\Schema\Grammars\Grammar $grammar): void
+    protected function addFluentIndexes(): void
     {
         foreach ($this->columns as $column) {
             foreach (['primary', 'unique', 'index', 'gin', 'gist'] as $index) {
