@@ -1,6 +1,6 @@
 <?php
 
-namespace Enes\LaravelPostgres;
+namespace Enes\LaravelPostgres\Packages\Postgres;
 
 use Illuminate\Database\Grammar;
 use Illuminate\Database\PostgresConnection as BasePostgresConnection;

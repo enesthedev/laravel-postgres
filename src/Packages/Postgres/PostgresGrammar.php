@@ -1,6 +1,6 @@
 <?php
 
-namespace Enes\LaravelPostgres\Schema\Grammars;
+namespace Enes\LaravelPostgres\Packages\Postgres;
 
 use Doctrine\DBAL\Types\Type;
 use Enes\LaravelPostgres\Schema\Blueprint;
